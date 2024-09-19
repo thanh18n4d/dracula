@@ -25,7 +25,7 @@ dracula:
     - &COLOR3        '#F1FA8C'
     - &COLOR4        '#BD93F9'
     - &COLOR5        '#FF79C6'
-    - &COLOR6        '#8BE9FD'
+    - &COLOR6        '#6dcde3'
     - &COLOR7        '#F8F8F2'
     - &COLOR8        '#6272A4'
     - &COLOR9        '#FF6E6E'
@@ -143,7 +143,7 @@ colors:
   list.focusForeground:                                                         # List/Tree foreground color for the focused item when the list/tree is active. An active list/tree has keyboard focus, an inactive does not
 
   # Activity Bar
-  activityBar.background: *BGLight                                              # Activity Bar background color
+  activityBar.background: *BGDark                                             # Activity Bar background color
   activityBar.inactiveForeground: *COMMENT                                      # Activity bar item foreground color when it is inactive
   activityBar.dropBackground:                                                   # Drag and drop feedback color for the Activity Bar items
   activityBar.foreground: *FG                                                   # Activity bar foreground color (for example used for the icons)
@@ -154,7 +154,7 @@ colors:
   activityBarBadge.foreground: *FG                                              # Activity notification badge foreground color
 
   # Side Bar
-  sideBar.background: *BGDark                                                   # Side Bar background color
+  sideBar.background: *BGDarker                                                   # Side Bar background color
   sideBar.foreground:                                                           # Side Bar foreground color. The Side Bar is the container for views like Explorer and Search
   sideBar.border:                                                               # Side Bar border color on the side separating the editor
   sideBarTitle.foreground: *FG                                                  # Side Bar title foreground color
@@ -182,7 +182,7 @@ colors:
 
   # Editor Colors
   editor.foreground: *FG
-  editor.background: *BG
+  editor.background: *BGDark
   editorLineNumber.foreground: *COMMENT
   editorCursor.foreground:
 
@@ -212,8 +212,8 @@ colors:
   editor.snippetFinalTabstopHighlightBorder: *GREEN                             # Highlight border color of the final tabstop of a snippet
 
   editorWhitespace.foreground: *NonText                                         # Color of whitespace characters in the editor
-  editorIndentGuide.background: *NonText                                        # Color of the editor indentation guides
-  editorIndentGuide.activeBackground: !alpha [ *WHITE, 45]                      # Color of the active indentation guide
+  editorIndentGuide.background1: *NonText                                        # Color of the editor indentation guides
+  editorIndentGuide.activeBackground1: !alpha [ *WHITE, 45]                      # Color of the active indentation guide
   editorRuler.foreground: *NonText                                              # Color of the editor rulers
 
   editorCodeLens.foreground: *COMMENT                                           # Foreground color of an editor CodeLens
@@ -633,7 +633,7 @@ tokenColors:
     - constant.character.string.escape
     - constant.regexp
     settings:
-      foreground: *PINK
+      foreground: *CYAN
 
 # =============================================================================
 # Entities
